@@ -20,7 +20,7 @@ final class twitterApi: NSObject, UNUserNotificationCenterDelegate {
   // Default to using the iOS account framework for handling twitter auth
   let useACAccount = true
   
-  func performAction() {
+  @objc func performAction() {
     
     if useACAccount {
       let accountStore = ACAccountStore()
@@ -43,8 +43,8 @@ final class twitterApi: NSObject, UNUserNotificationCenterDelegate {
       }
     }
   }
-  
-  @objc func postTweet() {
+
+  func postTweet() {
     let tweet = Sentence().tweet()
     if tweet.characters.count <= 140 {
       swifter.postTweet(status: tweet, success: { status in
@@ -53,9 +53,11 @@ final class twitterApi: NSObject, UNUserNotificationCenterDelegate {
         UserDefaults.standard.set(date, forKey: "TWEETDATE")
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "NEW_DATE"), object: nil)
       })
-      Timer.scheduledTimer(timeInterval: 3600, target: self, selector: #selector(postTweet), userInfo: nil, repeats: false)
     } else {
       postTweet()
+    }
+    DispatchQueue.main.async {
+      Timer.scheduledTimer(timeInterval: 3600, target: self, selector: #selector(self.performAction), userInfo: nil, repeats: false)
     }
   }
 }
