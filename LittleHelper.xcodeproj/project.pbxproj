@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6150A5415B9F9127944B9AA7 /* Pods_LittleHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF62A4B960CF992621BDA4 /* Pods_LittleHelper.framework */; };
+		9C487A591E130B2700EBB12D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C487A581E130B2700EBB12D /* AppDelegate.swift */; };
+		9C487A5E1E130B2700EBB12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C487A5C1E130B2700EBB12D /* Main.storyboard */; };
+		9C487A601E130B2700EBB12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C487A5F1E130B2700EBB12D /* Assets.xcassets */; };
+		9C487A631E130B2700EBB12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C487A611E130B2700EBB12D /* LaunchScreen.storyboard */; };
+		9C487A6C1E130B3A00EBB12D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C487A6B1E130B3A00EBB12D /* Social.framework */; };
+		9C5534FB1E13C71D00C00B36 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0FE3411E13C6F300BBBA4A /* SwifteriOS.framework */; };
+		9C5534FC1E13C71D00C00B36 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0FE3411E13C6F300BBBA4A /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C5535001E13C78C00C00B36 /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5534FF1E13C78C00C00B36 /* Sentence.swift */; };
+		9C68D2A31E166762000A4D6E /* KnowledgeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68D2A21E166762000A4D6E /* KnowledgeBase.swift */; };
+		9C8D71A01E13CC37009C311D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D719F1E13CC37009C311D /* AuthViewController.swift */; };
+		9C8D71A21E13CC3B009C311D /* TwitterAPICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D71A11E13CC3B009C311D /* TwitterAPICalls.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C0FE33E1E13C6F300BBBA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		9C0FE3401E13C6F300BBBA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		9C0FE3421E13C6F300BBBA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		9C0FE3441E13C6F300BBBA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		9C0FE3461E13C6F300BBBA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+		9C5534FD1E13C71D00C00B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C0FE3351E13C6B300BBBA4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C5534FC1E13C71D00C00B36 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E23917CD9F51DA5C7DD8B5F /* Pods-LittleHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleHelper/Pods-LittleHelper.release.xcconfig"; sourceTree = "<group>"; };
+		9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../../../Downloads/Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		9C487A551E130B2700EBB12D /* LittleHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C487A581E130B2700EBB12D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C487A5D1E130B2700EBB12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C487A5F1E130B2700EBB12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C487A621E130B2700EBB12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C487A641E130B2700EBB12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C487A6B1E130B3A00EBB12D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9C5534FF1E13C78C00C00B36 /* Sentence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
+		9C5535011E13C92E00C00B36 /* LittleHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LittleHelper.entitlements; sourceTree = "<group>"; };
+		9C68D2A21E166762000A4D6E /* KnowledgeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnowledgeBase.swift; sourceTree = "<group>"; };
+		9C8D719F1E13CC37009C311D /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		9C8D71A11E13CC3B009C311D /* TwitterAPICalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPICalls.swift; sourceTree = "<group>"; };
+		DFFF62A4B960CF992621BDA4 /* Pods_LittleHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittleHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8A6BDC6BEF8CD91EFFD357 /* Pods-LittleHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleHelper/Pods-LittleHelper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C487A521E130B2700EBB12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C487A6C1E130B3A00EBB12D /* Social.framework in Frameworks */,
+				9C5534FB1E13C71D00C00B36 /* SwifteriOS.framework in Frameworks */,
+				6150A5415B9F9127944B9AA7 /* Pods_LittleHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0FE3371E13C6F300BBBA4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C0FE33F1E13C6F300BBBA4A /* SwifterDemoiOS.app */,
+				9C0FE3411E13C6F300BBBA4A /* SwifteriOS.framework */,
+				9C0FE3431E13C6F300BBBA4A /* SwifterMac.framework */,
+				9C0FE3451E13C6F300BBBA4A /* SwifterDemoMac.app */,
+				9C0FE3471E13C6F300BBBA4A /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C487A4C1E130B2700EBB12D = {
+			isa = PBXGroup;
+			children = (
+				9C487A571E130B2700EBB12D /* LittleHelper */,
+				9C487A561E130B2700EBB12D /* Products */,
+				9C487A6A1E130B3A00EBB12D /* Frameworks */,
+				CC93E81145510EADC9B95B1E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9C487A561E130B2700EBB12D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C487A551E130B2700EBB12D /* LittleHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C487A571E130B2700EBB12D /* LittleHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9C5535011E13C92E00C00B36 /* LittleHelper.entitlements */,
+				9C487A581E130B2700EBB12D /* AppDelegate.swift */,
+				9C5534FF1E13C78C00C00B36 /* Sentence.swift */,
+				9C8D719F1E13CC37009C311D /* AuthViewController.swift */,
+				9C8D71A11E13CC3B009C311D /* TwitterAPICalls.swift */,
+				9C68D2A21E166762000A4D6E /* KnowledgeBase.swift */,
+				9C487A5C1E130B2700EBB12D /* Main.storyboard */,
+				9C487A5F1E130B2700EBB12D /* Assets.xcassets */,
+				9C487A611E130B2700EBB12D /* LaunchScreen.storyboard */,
+				9C487A641E130B2700EBB12D /* Info.plist */,
+			);
+			path = LittleHelper;
+			sourceTree = "<group>";
+		};
+		9C487A6A1E130B3A00EBB12D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */,
+				9C487A6B1E130B3A00EBB12D /* Social.framework */,
+				DFFF62A4B960CF992621BDA4 /* Pods_LittleHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC93E81145510EADC9B95B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A6BDC6BEF8CD91EFFD357 /* Pods-LittleHelper.debug.xcconfig */,
+				5E23917CD9F51DA5C7DD8B5F /* Pods-LittleHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C487A541E130B2700EBB12D /* LittleHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C487A671E130B2700EBB12D /* Build configuration list for PBXNativeTarget "LittleHelper" */;
+			buildPhases = (
+				FB09B0648971B13270AFE1B1 /* [CP] Check Pods Manifest.lock */,
+				9C487A511E130B2700EBB12D /* Sources */,
+				9C487A521E130B2700EBB12D /* Frameworks */,
+				9C487A531E130B2700EBB12D /* Resources */,
+				9C0FE3351E13C6B300BBBA4A /* Embed Frameworks */,
+				18C73ACA5E5AB385B3870C1D /* [CP] Embed Pods Frameworks */,
+				90A50A092B591E08A9D464D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5534FE1E13C71D00C00B36 /* PBXTargetDependency */,
+			);
+			name = LittleHelper;
+			productName = LittleHelper;
+			productReference = 9C487A551E130B2700EBB12D /* LittleHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C487A4D1E130B2700EBB12D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Jordan.Dixon;
+				TargetAttributes = {
+					9C487A541E130B2700EBB12D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = XQP2GL9H76;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9C487A501E130B2700EBB12D /* Build configuration list for PBXProject "LittleHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C487A4C1E130B2700EBB12D;
+			productRefGroup = 9C487A561E130B2700EBB12D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9C0FE3371E13C6F300BBBA4A /* Products */;
+					ProjectRef = 9C0FE3361E13C6F300BBBA4A /* Swifter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9C487A541E130B2700EBB12D /* LittleHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9C0FE33F1E13C6F300BBBA4A /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 9C0FE33E1E13C6F300BBBA4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C0FE3411E13C6F300BBBA4A /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 9C0FE3401E13C6F300BBBA4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C0FE3431E13C6F300BBBA4A /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 9C0FE3421E13C6F300BBBA4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C0FE3451E13C6F300BBBA4A /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 9C0FE3441E13C6F300BBBA4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C0FE3471E13C6F300BBBA4A /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 9C0FE3461E13C6F300BBBA4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C487A531E130B2700EBB12D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C487A631E130B2700EBB12D /* LaunchScreen.storyboard in Resources */,
+				9C487A601E130B2700EBB12D /* Assets.xcassets in Resources */,
+				9C487A5E1E130B2700EBB12D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18C73ACA5E5AB385B3870C1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleHelper/Pods-LittleHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90A50A092B591E08A9D464D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleHelper/Pods-LittleHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB09B0648971B13270AFE1B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C487A511E130B2700EBB12D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C68D2A31E166762000A4D6E /* KnowledgeBase.swift in Sources */,
+				9C8D71A21E13CC3B009C311D /* TwitterAPICalls.swift in Sources */,
+				9C5535001E13C78C00C00B36 /* Sentence.swift in Sources */,
+				9C8D71A01E13CC37009C311D /* AuthViewController.swift in Sources */,
+				9C487A591E130B2700EBB12D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C5534FE1E13C71D00C00B36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = 9C5534FD1E13C71D00C00B36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C487A5C1E130B2700EBB12D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C487A5D1E130B2700EBB12D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C487A611E130B2700EBB12D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C487A621E130B2700EBB12D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C487A651E130B2700EBB12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C487A661E130B2700EBB12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C487A681E130B2700EBB12D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8A6BDC6BEF8CD91EFFD357 /* Pods-LittleHelper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LittleHelper/LittleHelper.entitlements;
+				DEVELOPMENT_TEAM = XQP2GL9H76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/iOS_SDK/Framework",
+				);
+				INFOPLIST_FILE = LittleHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stickerbox.LittleHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9C487A691E130B2700EBB12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E23917CD9F51DA5C7DD8B5F /* Pods-LittleHelper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LittleHelper/LittleHelper.entitlements;
+				DEVELOPMENT_TEAM = XQP2GL9H76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/iOS_SDK/Framework",
+				);
+				INFOPLIST_FILE = LittleHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stickerbox.LittleHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C487A501E130B2700EBB12D /* Build configuration list for PBXProject "LittleHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C487A651E130B2700EBB12D /* Debug */,
+				9C487A661E130B2700EBB12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C487A671E130B2700EBB12D /* Build configuration list for PBXNativeTarget "LittleHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C487A681E130B2700EBB12D /* Debug */,
+				9C487A691E130B2700EBB12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C487A4D1E130B2700EBB12D /* Project object */;
+}
