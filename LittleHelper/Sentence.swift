@@ -129,7 +129,6 @@ struct SentanceStructures {
     [.adverb, .sexAct],
     [.adverb, .grapheme, .sexAct],
     [.sexAct, .grapheme, .adverb],
-    [.physicalVerb],
     [.emotion, .person],
     [.emotion, .person, .emoji],
     [.itself, .adjective],

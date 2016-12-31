@@ -2,10 +2,9 @@
   <img src="little_helper.png" alt="Little Helper" title="Little Helper" width="563">
 </p>
 
-# lilspeakingbot
 A twitter bot that tweets a sentence it generates determined by the fitness of the sentence
 
-## How it works:
+## How it works
 
 In its current implementation, this bot works in the following way:
 
