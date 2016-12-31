@@ -147,17 +147,16 @@ class Sentence {
     var highestFitness = 0.0
     
     for _ in 1...20 {
-      let potentialTweet = constructSentence(sentence: "", fitness: 0.0, count: 0.0, isConnective: false)
+      let potentialTweet = construct(sentence: "", fitness: 0.0, count: 0.0, isConnective: false)
       if potentialTweet.1 > highestFitness {
         highestFitness = potentialTweet.1
         tweet = potentialTweet.0
       }
     }
-    print(tweet)
     return tweet
   }
 
-  private func constructSentence(sentence: String, fitness: Double, count: Double, isConnective: Bool) -> (String, Double) {
+  private func construct(sentence: String, fitness: Double, count: Double, isConnective: Bool) -> (String, Double) {
 
     var sentence = sentence
     var count = count
@@ -166,7 +165,7 @@ class Sentence {
     let index = Int(arc4random_uniform(UInt32(SentanceStructures.structures.count)))
     let structure = SentanceStructures.structures[index]
     for type in structure {
-      let word = getWord(word: type)
+      let word = getWord(type: type)
       count += 1
       fitness += word.1
       if type == .grapheme {
@@ -183,17 +182,17 @@ class Sentence {
       let randomNumber = Int(arc4random_uniform(UInt32(KnowledgeBase.connective.count)))
       sentence.append(KnowledgeBase.connective[randomNumber].0)
       fitness += KnowledgeBase.connective[randomNumber].1
-      return(constructSentence(sentence: sentence, fitness: fitness/count, count: count, isConnective: true))
+      return(construct(sentence: sentence, fitness: fitness/count, count: count, isConnective: true))
     }
     let fitnessValue = fitness / count
     return (sentence, fitnessValue)
   }
   
-  private func getWord(word: WordType) -> (String, Double) {
+  private func getWord(type: WordType) -> (String, Double) {
     
     var array: [(String, Double)]
     
-    switch word {
+    switch type {
     case .noun:
       array = KnowledgeBase.nouns
     case .person:
