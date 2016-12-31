@@ -151,6 +151,10 @@ class KnowledgeBase {
     ("is", 7.5)
   ]
   
+  static let positiveIs = [
+    ("is", 10.0)
+  ]
+  
   static let questionStarter = [
     ("why", 5.5),
     ("why the hell", 6.0),

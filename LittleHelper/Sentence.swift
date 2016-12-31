@@ -20,6 +20,7 @@ enum WordType {
   case thirdPartyThought
   case questionDoes
   case questionIs
+  case positiveIs
   case questionStarter
   case scale
   case comparison
@@ -135,7 +136,11 @@ struct SentanceStructures {
     [.person, .thirdPartyThought, .person, .pastPhysicalVerb, .time],
     [.twitter, .thirdPartyThought, .pluralPerson, .noun, .adverb, .pastPhysicalVerb, .time],
     [.person, .thirdPartyThought, .pluralPerson, .swear, .noun, .adverb, .pastPhysicalVerb, .time],
-    [.twitter, .thirdPartyThought, .pluralPerson, .noun, .adverb, .pastPhysicalVerb, .time, .location, .placeName]
+    [.twitter, .thirdPartyThought, .pluralPerson, .noun, .adverb, .pastPhysicalVerb, .time, .location, .placeName],
+    [.person, .positiveIs, .scale, .adjective],
+    [.person, .positiveIs, .adjective],
+    [.twitter, .positiveIs, .adjective],
+    [.twitter, .positiveIs, .scale, .adjective]
   ]
 }
 
@@ -215,6 +220,8 @@ class Sentence {
       array = KnowledgeBase.questionDoes
     case .questionIs:
       array = KnowledgeBase.questionIs
+    case .positiveIs:
+      array = KnowledgeBase.positiveIs
     case .questionStarter:
       array = KnowledgeBase.questionStarter
     case .scale:
