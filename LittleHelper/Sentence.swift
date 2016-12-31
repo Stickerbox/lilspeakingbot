@@ -140,6 +140,8 @@ struct SentanceStructures {
     [.person, .positiveIs, .scale, .adjective],
     [.person, .positiveIs, .adjective],
     [.twitter, .positiveIs, .adjective],
+    [.person, .positiveIs, .adjective],
+    [.twitter, .positiveIs, .adjective],
     [.twitter, .positiveIs, .scale, .adjective]
   ]
 }
